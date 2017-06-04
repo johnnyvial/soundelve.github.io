@@ -8,30 +8,73 @@
         <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 
         <style>
-         html, body {
-             height: 100%;
-         }
             body {
                 background-color: #88b2ff;
-                height: 100%;
                 display: flex;
                 align-items: center;
                 justify-content: center;
                 align-content: center;
                 font-family: 'Roboto', sans-serif;
                 color: white;
+                margin-top:0px;
+                margin-bottom:0px;
+                margin-right:0px;
+                margin-left:0px;
+                text-align: center;
             }
-         #view  {
+         .container  {
              display: flex;
-             align-items: center;
              justify-content: center;
              flex-direction: column;
-         }
+             width:100%;
 
-         #picture  {
+         }
+         .row  {
              display: flex;
              align-items: center;
-            }
+             background-color: #88b2ff;
+             justyfy-content: center;
+
+         }
+         .inner {
+             display: flex;
+             margin-left: 10px;
+             margin-right:10px;
+             margin-top: 10px;
+             margin-bottom: 10px;
+             align-content:center;
+             flex-direction: column;
+             align-items: center;
+             justify-content: center;
+             line-height: 2;
+             font-size:x-large;
+         }
+         .title {
+             display: flex;
+             align-content:center;
+             flex-direction: column;
+             align-items: center;
+             justify-content: center;
+             height: 400px;
+             font-size:xx-large;
+             line-height: 2;
+
+         }
+         .rowdiff {
+             display: flex;
+             background-color: #4687FF;
+             justify-content: center;
+             flex-directon: row;
+
+         }
+         .rowhighlight {
+             display: flex;
+             background-color: #FFD17B;
+             justify-content: center;
+             flex-direction: column;
+             height: 500px;
+             color: #4687FF;
+         }
         </style>
 
         <!--[if lt IE 9]>
@@ -39,23 +82,79 @@
         <![endif]-->
     </head>
     <body>
-        <div id="view">
-            <div id="picture">
-                <img src="/logo2.svg">
-            </div>
-             <h3>
+        <div class="container">
+            <div class="row title">
+                <img src="/logo3.svg">
+                <div>
                 Let your equipment speak for itself.
-            </h3>
+                </div>
+            </div>
+
+            <div class="rowdiff">
+                <div>
+                    <img height="300px"  src="/mil-lining.jpg">
+                </div>
+                    <div class="inner">
+                    Detect liner wear using
+                    only the noises the mill produces.
+                    </div>
+            </div>
+
+            <div class="row">
+                <div class="inner">
+                    Hear bearing faults as they develop.
+                </div>
+                <div>
+                    <img height="300px" src="/bearing2.jpg">
+                </div>
+            </div>
+
+            <div class="rowdiff">
+                <div>
+                    <img height="300px" src="/workers.jpg">
+                </div>
+                <div class="inner">
+                    Your best operators trust their ears more than the SCADA system. <br>
+                    <em>We help you hear your plant.</em>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="inner">
+                    No downtime, no costly site upgrades, no consultants. Just use a mobile phone or our microphones.
+                </div>
+                <div>
+                    <img height="300px" src="/phone.jpg">
+                </div>
+            </div>
+
+            <div class="rowhighlight">
+
+                <div class="inner">
+                <div >
+                    Join our Beta:
+                </div>
             <form method="post" action="https://briskforms.com/go/216c169eae7836f0f75c77f9461be42c">
-            <h4>
-                Join our Beta:  <input type="email" placeholder="your.email@minecorp.com" name="email">
+                E-mail: <input type="email" placeholder="your.email@awesomecompany.com"> <br>
+                Message: <input  height="100px" type="text" placeholder="Optional Message">
                 <input type="submit" value="Submit">
-                </h4>
             </form>
+                </div>
+                <div>
+                    <div>
+                        <img src="/logo4.svg">
+                        <div>
+                            Let your equipment speak for itself.
+                        </div>
+                    </div>
+                </div>
+            </div>
 
-
+            <div class="rowdiff">
+                <div>
+                    Imagined through Unearthed.
+                </div>
+            </div>
         </div>
-
-
     </body>
 </html>
