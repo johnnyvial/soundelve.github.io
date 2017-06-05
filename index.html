@@ -33,9 +33,12 @@
              display: flex;
              align-items: center;
              background-color: #88b2ff;
-             justyfy-content: center;
-
+             justify-content: center;
+             align-content: center;
+             flex-direction: column;
+             height: 300px;
          }
+
          .inner {
              display: flex;
              margin-left: 10px;
@@ -64,11 +67,20 @@
              display: flex;
              background-color: #4687FF;
              justify-content: center;
-             flex-directon: row;
-
+             flex-direction: row;
+             height: 300px;
+         }
+         .imdiv {
+             background-color: #4687FF;
+             background-repeat: no-repeat;
+             background-position: right bottom;
+             background-size: cover;
+             background-attachment: fixed;
+             height: 500px;
          }
          .rowhighlight {
-             display: flex;             background-color: #FFD17B;
+             display: flex;
+             background-color: #FFD17B;
              justify-content: center;
              flex-direction: column;
              height: 500px;
@@ -89,41 +101,42 @@
                 </div>
             </div>
 
+            <div class="rowdiff imdiv" style="
+                                              background-image: url(/mil-lining2.jpg)">
+            </div>
             <div class="rowdiff">
-                <div>
-                    <img height="300px"  src="/mil-lining2.jpg">
-                </div>
                     <div class="inner">
                     Detect liner wear using
-                    only the noises the mill produces.
+                    only the noises your mill produces.
                     </div>
             </div>
-
+            <div class="row imdiv"
+                 style="background-image: url(/bearing2.jpg);
+                        background-position: center;">
+            </div>
             <div class="row">
                 <div class="inner">
                     Hear bearing faults as they develop.
                 </div>
-                <div>
-                    <img height="300px" src="/bearing3.jpg">
-                </div>
             </div>
-
+            <div class="row imdiv"
+                 style="background-image: url(/workers.jpg);
+                        background-position: center;">
+            </div>
             <div class="rowdiff">
-                <div>
-                    <img height="300px" src="/workers2.jpg">
-                </div>
                 <div class="inner">
                     Your best operators trust their ears more than the SCADA system. <br>
                     <em>We help you hear your plant.</em>
                 </div>
             </div>
 
+            <div class="row imdiv"
+                 style="background-image: url(/phone.jpg);
+                        background-position: center;">
+            </div>
             <div class="row">
                 <div class="inner">
                     No downtime, no costly site upgrades, no consultants. Just use a mobile phone or our microphones.
-                </div>
-                <div>
-                    <img height="300px" src="/phone.jpg">
                 </div>
             </div>
 
@@ -133,9 +146,8 @@
                 <div >
                     Join our Beta:
                 </div>
-            <form method="post" action="https://briskforms.com/go/216c169eae7836f0f75c77f9461be42c">
+            <form method="post" action="https://www.briskforms.com/go/e4211801b9ad36c7075bbf36543ba3d8">
                 E-mail: <input type="email" placeholder="your.email@awesomecompany.com"> <br>
-                Message: <input  height="100px" type="text" placeholder="Optional Message">
                 <input type="submit" value="Submit">
             </form>
                 </div>
@@ -154,6 +166,5 @@
                     Imagined through Unearthed.
                 </div>
             </div>
-        </div>
-    </body>
+
 </html>
