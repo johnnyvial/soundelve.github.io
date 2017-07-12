@@ -122,8 +122,7 @@
                 </div>
             <form method="post" action="https://www.briskforms.com/go/e4211801b9ad36c7075bbf36543ba3d8">
                 E-mail: <input type="email" name="email" placeholder="your.email@awesomecompany.com"> <br>
-                <input type="submit" value="Submit"> <br>
-                <input type="hidden" name="redirect" value="http://soundelve.com/thankyou.html" />
+                <input type="submit" value="Submit" onClick="redirect();"> <br>
             </form>
 
 
@@ -134,5 +133,12 @@
                     Imagined through Unearthed.
                 </div>
             </div>
+            
+            <script type="text/javascript" language="javascript">
+            function redirect()
+            {
+                window.location.replace="http://soundelve.com/thankyou.html";
+            }
+            </script>
 
 </html>
